@@ -1,3 +1,8 @@
+/**
+ * MakeCode extension – gefixt & opgeschoond
+ */
+
+//% color="#AA278D" weight=200
 namespace area {
 
     //% block="oppervlakte cirkel straal %radius"
@@ -23,6 +28,8 @@ namespace area {
         return getallen.length > 0 ? som / getallen.length : 0
     }
 }
+
+//% color="#0AE2FF" weight=190
 namespace basic_extra {
 
     export enum PauseTime {
@@ -45,6 +52,8 @@ namespace basic_extra {
         control.waitMicros(time * 1000)
     }
 }
+
+//% color="#D426C8" weight=180
 namespace custom_block {
 
     export enum Multi_Choose {
