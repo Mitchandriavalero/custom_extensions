@@ -2,7 +2,7 @@
  * MakeCode extension – gefixt & opgeschoond
  */
 
-//% color="#AA278D" weight=200 icon="\&#xf1ec;"
+//% color="#AA278D" weight=200
 namespace area {
 
     //% block="oppervlakte cirkel straal %radius"
