@@ -2,7 +2,7 @@
  * MakeCode extension – gefixt & opgeschoond
  */
 
-//% color="#AA278D" weight=200
+//% color="#AA278D" weight=200 icon="\&#xf1ec;"
 namespace area {
 
     //% block="oppervlakte cirkel straal %radius"
@@ -29,7 +29,7 @@ namespace area {
     }
 }
 
-//% color="#0AE2FF" weight=190
+//% color="#0AE2FF" weight=190 icon="\uf017"
 namespace basic_extra {
 
     export enum PauseTime {
@@ -53,7 +53,7 @@ namespace basic_extra {
     }
 }
 
-//% color="#D426C8" weight=180
+//% color="#D426C8" weight=180 icon="\uf013"
 namespace custom_block {
 
     export enum Multi_Choose {
