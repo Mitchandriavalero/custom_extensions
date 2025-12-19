@@ -66,7 +66,7 @@ namespace custom_block {
         //% block="/"
         Multi_Divide,
         //% block="%"
-        Multi_Module
+        Multi_Modulo
     }
 
     //% block="Calculator %getal1 %calc %getal2"
@@ -80,7 +80,7 @@ namespace custom_block {
                 return getal1 * getal2;
             case Multi_Choose.Multi_Divide:
                 return getal1 / getal2;
-            case Multi_Choose.Multi_Module:
+            case Multi_Choose.Multi_Modulo:
                 return getal1 % getal2;
             default:
                 return 0;
