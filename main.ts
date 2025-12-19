@@ -1,8 +1,3 @@
-/**
- * MakeCode extension – gefixt & opgeschoond
- */
-
-//% color="#AA278D" weight=200
 namespace area {
 
     //% block="oppervlakte cirkel straal %radius"
@@ -28,8 +23,6 @@ namespace area {
         return getallen.length > 0 ? som / getallen.length : 0
     }
 }
-
-//% color="#0AE2FF" weight=190
 namespace basic_extra {
 
     export enum PauseTime {
@@ -52,8 +45,6 @@ namespace basic_extra {
         control.waitMicros(time * 1000)
     }
 }
-
-//% color="#D426C8" weight=180
 namespace custom_block {
 
     export enum Multi_Choose {
@@ -64,7 +55,9 @@ namespace custom_block {
         //% block="*"
         Multi_Multiply,
         //% block="/"
-        Multi_Divide
+        Multi_Divide,
+        //% block="%"
+        Multi_Module
     }
 
     //% block="Calculator %getal1 %calc %getal2"
@@ -78,6 +71,8 @@ namespace custom_block {
                 return getal1 * getal2;
             case Multi_Choose.Multi_Divide:
                 return getal1 / getal2;
+            case Multi_Choose.Multi_Module:
+                return getal1 % getal2;
             default:
                 return 0;
         }
