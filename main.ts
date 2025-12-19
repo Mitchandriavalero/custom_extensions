@@ -58,16 +58,28 @@ namespace custom_block {
 
     export enum Multi_Choose {
         //% block="+"
-        Multi_Plus = "+",
+        Multi_Plus,
         //% block="-"
-        Multi_Minus = "-",
+        Multi_Minus,
         //% block="*"
-        Multi_Multiply = "*",
+        Multi_Multiply,
         //% block="/"
-        Multi_Divide = "/"
+        Multi_Divide
     }
-    //% block="Calculator"
-    export function Calculator(getal1: number, calc: Multi_Choose, getal2: number) {
-        return getal1, calc, getal2
+
+    //% block="Calculator %getal1 %calc %getal2"
+    export function Calculator(getal1: number, calc: Multi_Choose, getal2: number): number {
+        switch (calc) {
+            case Multi_Choose.Multi_Plus:
+                return getal1 + getal2;
+            case Multi_Choose.Multi_Minus:
+                return getal1 - getal2;
+            case Multi_Choose.Multi_Multiply:
+                return getal1 * getal2;
+            case Multi_Choose.Multi_Divide:
+                return getal1 / getal2;
+            default:
+                return 0;
+        }
     }
 }
