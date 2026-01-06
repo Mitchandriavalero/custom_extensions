@@ -30,7 +30,7 @@ namespace area {
 }
 
 //% color="#0AE2FF" weight=190 icon="\uf017"
-namespace basic_extra {
+namespace timer {
 
     export enum PauseTime {
         //% block="1 seconde"
