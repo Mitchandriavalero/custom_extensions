@@ -1,6 +1,6 @@
 {
-    "name": "Custom_Extensions",
-    "version": "1.0.8",
+    "name": "custom_extensions",
+    "version": "1.0.9",
     "description": "",
     "dependencies": {
         "core": "*",
